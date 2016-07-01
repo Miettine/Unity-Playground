@@ -17,9 +17,9 @@ public class UrlParser : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Regex urlRx =
-			new Regex(@"(?<url>(http:|https:[/][/]|www.)([a-z]|[A-Z]|[0-9]|[/~?=&#+-])*)",
-			RegexOptions.IgnoreCase);
+	//	Regex urlRx =
+			//new Regex(@"(?<url>(http:|https:[/][/]|www.)([a-z]|[A-Z]|[0-9]|[/~?=&#+-])*)",
+		//	RegexOptions.IgnoreCase);
 
 		
 
@@ -29,21 +29,21 @@ public class UrlParser : MonoBehaviour {
 
 
 
-		MatchCollection matches = urlRx.Matches(parseableText);
-		foreach (Match match in matches) {
-			string foundMatch = match.Value;
+	//	MatchCollection matches = urlRx.Matches(parseableText);
+	//	foreach (Match match in matches) {
+			//string foundMatch = match.Value;
 
-			//string str = "1,5,12,34,";
-			//string removecomma = str.Remove(str.Length - 1);
-			//foundMatch = Regex.Replace(foundMatch, ".$", "");
+			////string str = "1,5,12,34,";
+		//	//string removecomma = str.Remove(str.Length - 1);
+		//	//foundMatch = Regex.Replace(foundMatch, ".$", "");
 
-			foundMatch.TrimEnd(foundMatch[foundMatch.Length - 1]);
+	//		foundMatch.TrimEnd(foundMatch[foundMatch.Length - 1]);
 
-			list.Add(foundMatch);
-		}
+	//		list.Add(foundMatch);
+	//	}
 
-		for (int i = 0; i<list.Count; i++) {
-			Debug.Log(list[i]);
-		}
+	//	for (int i = 0; i<list.Count; i++) {
+	//		Debug.Log(list[i]);
+	//	}
 	}
 }
