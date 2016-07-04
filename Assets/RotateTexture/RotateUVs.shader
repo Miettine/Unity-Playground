@@ -32,7 +32,7 @@
 	}
 	ENDCG
 	}
-		FallBack "Standard"
+		FallBack "Unlit/Texture"
 }
 /*
 Shader "Custom/RotateUVs" {
