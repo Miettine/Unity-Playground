@@ -14,25 +14,18 @@ public class RotationMatrix : MonoBehaviour {
 		var meshFilter = GetComponent<MeshFilter>();
 		m_Mesh = meshFilter.mesh;
 
-		Rotate(-givenAngle);
+		Rotate(givenAngle);
 
 		Destroy(this);
 	}
 
-
-	Vector2[] CalculateMatrix(float angleDeg) {
-		//Vector2[] rotationMatrix = { new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)), new Vector2(-1f * Mathf.Sin(angle), Mathf.Cos(angle)) };
-		float angleRad = Mathf.Deg2Rad * angleDeg;
-
-		Vector2[] rotationMatrix = { new Vector2(Mathf.Cos(angleRad), Mathf.Sin(angleRad)), new Vector2(-1f * Mathf.Sin(angleRad), Mathf.Cos(angleRad)) };
-		return rotationMatrix;
-	}
-
 	void Rotate(float angle) {
 
-		Vector2[] rotationMatrix = CalculateMatrix(angle);
+		Vector2[] rotationMatrix = MatrixRotator.CalculateMatrix(-angle);
 
 		Vector2[] rotatedUv = m_Mesh.uv;
+
+		Debug.Log(m_Mesh.uv.Length);
 
 		for (int i = 0; i < rotatedUv.Length; i++) {
 			rotatedUv[i].x = Vector2.Dot(rotationMatrix[0], m_Mesh.uv[i]);
