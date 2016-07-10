@@ -3,37 +3,7 @@ using System.Collections;
 
 public class RotationMatrix : MonoBehaviour {
 
-	//TODO: Figure out why this code doesn't work, and the commented version below does
-
-	public int givenAngle = 25;
-
-	Mesh m_Mesh;
-
-	// Use this for initialization
-	void Start() {
-		var meshFilter = GetComponent<MeshFilter>();
-		m_Mesh = meshFilter.mesh;
-
-		Rotate(givenAngle);
-
-		Destroy(this);
-	}
-
-	void Rotate(float angle) {
-
-		Vector2[] rotationMatrix = MatrixRotator.CalculateMatrix(-angle);
-
-		Vector2[] rotatedUv = m_Mesh.uv;
-
-		Debug.Log(m_Mesh.uv.Length);
-
-		for (int i = 0; i < rotatedUv.Length; i++) {
-			rotatedUv[i].x = Vector2.Dot(rotationMatrix[0], m_Mesh.uv[i]);
-			rotatedUv[i].y = Vector2.Dot(rotationMatrix[1], m_Mesh.uv[i]);
-		}
-
-		m_Mesh.uv = rotatedUv;
-	}
+	
 }
 
 
