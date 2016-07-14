@@ -9,19 +9,21 @@ public class UrlParser : MonoBehaviour {
 	public Text parseableUiText;
 	string parseableText;
 
-	List<string> list = new List<string>();
+	//List<string> list = new List<string>();
 
 	void Awake() {
-		parseableText = parseableUiText.text;
+		//parseableText = parseableUiText.text;
 	}
 
-	// Use this for initialization
-	void Start () {
-	//	Regex urlRx =
-			//new Regex(@"(?<url>(http:|https:[/][/]|www.)([a-z]|[A-Z]|[0-9]|[/~?=&#+-])*)",
-		//	RegexOptions.IgnoreCase);
 
-		
+	void Start() {
+		//TODO: Figure out why it insults me about Regex not existing in the namespace.
+
+		//Regex System.Text.urlRx =
+		//	new System.Text.Regex(@"(?<url>(http:|https:[/][/]|www.)([a-z]|[A-Z]|[0-9]|[/~?=&#+-])*)"
+		//);
+
+
 
 		/*new Regex(@"(?<url>(http:|https:[/][/]|www.)([a-z]|[A-Z]|[0-9]|[/.]|[~]|[?]|[=]|[&]|[#]|[+]|[-])*)", */
 		//Reader, in case you are not familiar with regular expressions, it lets you parse Url's out of the comment string
@@ -29,21 +31,21 @@ public class UrlParser : MonoBehaviour {
 
 
 
-	//	MatchCollection matches = urlRx.Matches(parseableText);
-	//	foreach (Match match in matches) {
-			//string foundMatch = match.Value;
+		//MatchCollection matches = urlRx.Matches(parseableText);
+		//foreach (Match match in matches) {
+		//	string foundMatch = match.Value;
 
-			////string str = "1,5,12,34,";
+		//	//string str = "1,5,12,34,";
 		//	//string removecomma = str.Remove(str.Length - 1);
 		//	//foundMatch = Regex.Replace(foundMatch, ".$", "");
 
-	//		foundMatch.TrimEnd(foundMatch[foundMatch.Length - 1]);
+		//	foundMatch.TrimEnd(foundMatch[foundMatch.Length - 1]);
 
-	//		list.Add(foundMatch);
-	//	}
+		//	list.Add(foundMatch);
+		//}
 
-	//	for (int i = 0; i<list.Count; i++) {
-	//		Debug.Log(list[i]);
-	//	}
+		//for (int i = 0; i < list.Count; i++) {
+		//	Debug.Log(list[i]);
+		//}
 	}
 }

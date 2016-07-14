@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class BigPlayerPrefs : MonoBehaviour {
+public class PersistentPlayerPrefs : MonoBehaviour {
 
 	public InputField inputField;
 
