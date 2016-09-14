@@ -5,7 +5,7 @@ public class EnumeratedList : MonoBehaviour {
 
 
 }
-
+/*
 public class ListSelections : IEnumerable {
 	ListSelection[] selections;
 
@@ -16,7 +16,7 @@ public class ListSelections : IEnumerable {
 			selections[i] = _selectionsArray[i];
 		}
 	}
-
+	/*
 	IEnumerator IEnumerable.GetEnumerator() {
 		return (IEnumerator)GetEnumerator();
 	}
@@ -25,10 +25,10 @@ public class ListSelections : IEnumerable {
 		return new PeopleEnum(selections);
 	}
 }
-
+/*
 // When you implement IEnumerable, you must also implement IEnumerator.
 public class PeopleEnum : IEnumerator {
-	public Person[] _people;
+	/*public Person[] _people;
 
 	// Enumerators are positioned before the first element
 	// until the first MoveNext() call.
@@ -62,4 +62,4 @@ public class PeopleEnum : IEnumerator {
 			}
 		}
 	}
-}
+}*/
