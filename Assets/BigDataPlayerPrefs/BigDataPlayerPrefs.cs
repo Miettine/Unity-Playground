@@ -21,7 +21,7 @@ public class BigDataPlayerPrefs : MonoBehaviour {
 		//string[] bigDataArray;
 
 		for (int i = 0; i< dataPoints; i++) {
-			string data = "data " + i + "version3" + " :" + baseData + baseData;
+			string data = "data " + i + "version3" + " :" + baseData + baseData + baseData;
 			string fakeguid = "guid" + i + "-aaaaa-aaaaa-aaaaa";
 
 			PlayerPrefs.SetString(fakeguid, data);
