@@ -4,15 +4,21 @@ Greetings, program!
 
 The Unity projects I work on can get pretty complex and contain a ton of distracting pieces. I created this repository, so that I would have a clean and empty Unity workspace where nothing can distract me. In big projects, compiling and build times can get really long, but here, I can test code much quicker.
 
-I use this workspace during challenging tasks at work-related or personal Unity projects
+I use this workspace during challenging tasks at work-related or personal Unity projects. I tend to use it for simple and short experiments. As such, these projects demonstrate only a fraction of my skill and experience.
 
 ##Sub-projects##
 
 The assets-folder contains sub-folders, each containing the assets of small projects that I have worked on.
 
+##Sub-projects##
+
+Needed to make my own enumerated, iterable data structure. Still need to bring myself to finish this project...
+
 ###BigDataPlayerPrefs###
 
 Tested if Unity WebGL's playerprefs allow large amounts of text to be saved. I stored a book's chapter's worth of text. Worked like a charm.
+
+###BigDataPlayerPrefs###
 
 ###InputField###
 
