@@ -10,15 +10,13 @@ I use this workspace during challenging tasks at work-related or personal Unity 
 
 The assets-folder contains sub-folders, each containing the assets of small projects that I have worked on.
 
-##Sub-projects##
+###EnumeratedList###
 
 Needed to make my own enumerated, iterable data structure. Still need to bring myself to finish this project...
 
 ###BigDataPlayerPrefs###
 
 Tested if Unity WebGL's playerprefs allow large amounts of text to be saved. I stored a book's chapter's worth of text. Worked like a charm.
-
-###BigDataPlayerPrefs###
 
 ###InputField###
 
@@ -46,7 +44,7 @@ Boss told me I needed a way to rotate a texture. I created my own matrix dot pro
 
 ###Singleton###
 
-Took UnifyCommunity's Singleton script. I inherited three classes of my own from it, and experimented with using the singleton design pattern. It works pretty well, and lessens the amount of code I need to copy paste when I have a project that uses a lot of singletons.
+Took UnifyCommunity's Singleton script. I inherited three classes of my own from it, and experimented with the singleton design pattern. It works pretty well, and lessens the amount of code I need to copy paste when I have a project that uses a lot of singletons.
 
 ###SuchADrag###
 
